@@ -64,20 +64,7 @@ TalentBridge kết hợp sức mạnh của **Spring Boot** và **React**
 
 ## ⚙️ Cấu hình backend (`application.properties`)
 
-> **Chạy file init_script.sql trong thư mục /project-init (Dùng HeidiSQL hoặc cái khác) để init data cơ bản**
 
-- Tập tin SQL này chỉ tương thích và chạy được trên MySQL, MariaDB
-- File sẽ thực hiện các tác vụ sau:
-  - Khởi tạo Database Talent Bridge
-  - Khởi tạo schema toàn bộ ứng dụng
-  - Thêm nhiều dữ liệu vào bảng permissions
-  - Thêm nhiều dữ liệu vào bảng roles (gồm 3 role: ADMIN, RECRUITER, USER)
-  - Thêm 1 dữ liệu vào bảng user (email: admin@gmail.com, password: 123456, role: ADMIN)
-
-> **Config các service Backend dùng tại `application.properties` với nội dung sau, tuỳ chỉnh các biến theo môi trường của bạn**
-
-```properties
-spring.application.name=TalentBridge-Backend
 
 # Database connection config
 spring.datasource.url=
@@ -192,3 +179,4 @@ Thay bucket-name bằng bucket của bạn
 > ✔ Giữ nguyên hai dòng ACL được **check** để bảo mật tốt hơn (nếu không dùng ACL).
 
 ---
+
